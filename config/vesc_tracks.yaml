@@ -1,0 +1,25 @@
+vesc_tracks_node:
+  ros__parameters:
+
+    left_port: "/dev/ttyACM0"
+    right_port: "/dev/ttyACM1"
+    baudrate: 115200
+
+    wheel_diameter: 0.165
+    gear_ratio: 20.0
+    motor_poles: 14.0
+    max_erpm: 35000
+
+    left_sign: 1.0
+    right_sign: 1.0
+
+    command_topic: "/vesc/track_speed_cmd"
+    left_state_topic: "/vesc/left/state"
+    right_state_topic: "/vesc/right/state"
+    feedback_topic: "/vesc/track_speed_feedback"
+
+    control_rate_hz: 20.0
+    read_rate_hz: 10.0
+    cmd_timeout: 0.5
+
+    print_debug: false

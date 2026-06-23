@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# ROS 2 workspace outputs
+build/
+install/
+log/
+
+# uv / local environment
+.venv/
+
+# Editors
+.vscode/
+.idea/
+
+# System
+.DS_Store
