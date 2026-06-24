@@ -8,7 +8,7 @@ import os
 
 
 def generate_launch_description():
-    package_name = "rover_vesc_control"
+    package_name = "ros2_vesc_control"
 
     default_config_file = os.path.join(
         get_package_share_directory(package_name),

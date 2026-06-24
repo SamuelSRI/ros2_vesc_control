@@ -1,4 +1,4 @@
-# rover_vesc_control
+# ros2_vesc_control
 
 ROS 2 package to control two VESC motor controllers over UART.
 
@@ -104,7 +104,7 @@ data[1] = measured right speed in m/s
 cd ~/ros2_ws
 uv venv --system-site-packages .venv
 source .venv/bin/activate
-uv pip install -r src/rover_vesc_control/requirements.txt
+uv pip install -r src/ros2_vesc_control/requirements.txt
 ```
 
 ## Build
@@ -113,20 +113,20 @@ uv pip install -r src/rover_vesc_control/requirements.txt
 cd ~/ros2_ws
 source /opt/ros/jazzy/setup.bash
 source .venv/bin/activate
-colcon build --symlink-install --packages-select rover_vesc_control
+colcon build --symlink-install --packages-select ros2_vesc_control
 source install/setup.bash
 ```
 
 ## Run
 
 ```bash
-ros2 launch rover_vesc_control vesc_tracks.launch.py
+ros2 launch ros2_vesc_control vesc_tracks.launch.py
 ```
 
 With custom config:
 
 ```bash
-ros2 launch rover_vesc_control vesc_tracks.launch.py \
+ros2 launch ros2_vesc_control vesc_tracks.launch.py \
   config_file:=/path/to/my_config.yaml
 ```
 

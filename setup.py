@@ -3,7 +3,7 @@ from glob import glob
 
 from setuptools import find_packages, setup
 
-package_name = 'rover_vesc_control'
+package_name = 'ros2_vesc_control'
 
 setup(
     name=package_name,
@@ -36,10 +36,9 @@ setup(
     maintainer_email='samuel16.gendre@gmail.com',
     description='ROS 2 VESC UART controller for tracked rover',
     license='MIT',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'vesc_tracks_node = rover_vesc_control.vesc_tracks_node:main',
+            'vesc_tracks_node = ros2_vesc_control.vesc_tracks_node:main',
         ],
     },
 )

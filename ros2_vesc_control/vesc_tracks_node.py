@@ -8,7 +8,7 @@ from rclpy.node import Node
 
 from std_msgs.msg import Float32MultiArray
 
-from rover_vesc_control.vesc_uart import VescUart
+from ros2_vesc_control.vesc_uart import VescUart
 
 
 class VescTracksNode(Node):
@@ -154,7 +154,7 @@ class VescTracksNode(Node):
 
     def cmd_callback(self, msg: Float32MultiArray):
         if len(msg.data) < 2:
-            self.get_logger().warn("Command must contain [left_m_s, right_m_s]")
+            self.get_logger().warning("Command must contain [left_m_s, right_m_s]")
             return
 
         self.left_cmd_m_s = float(msg.data[0])
@@ -242,7 +242,7 @@ class VescTracksNode(Node):
                 side_name="left"
             )
         else:
-            self.get_logger().warn("No values received from left VESC")
+            self.get_logger().warning("No values received from left VESC")
 
         if right_values is not None:
             right_speed_m_s = self.publish_state(
@@ -252,7 +252,7 @@ class VescTracksNode(Node):
                 side_name="right"
             )
         else:
-            self.get_logger().warn("No values received from right VESC")
+            self.get_logger().warning("No values received from right VESC")
 
         feedback_msg = Float32MultiArray()
         feedback_msg.data = [

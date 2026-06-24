@@ -3,7 +3,7 @@
 import sys
 import time
 
-from rover_vesc_control.vesc_uart import VescUart
+from ros2_vesc_control.vesc_uart import VescUart
 
 
 def main():

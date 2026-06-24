@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>rover_vesc_control</name>
+  <name>ros2_vesc_control</name>
   <version>0.1.0</version>
   <description>ROS 2 VESC UART controller for tracked rover</description>
 
