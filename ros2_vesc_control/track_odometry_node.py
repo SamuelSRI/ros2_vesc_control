@@ -132,7 +132,7 @@ class TrackOdometryNode(Node):
             tf_msg.transform.rotation.z = qz
             tf_msg.transform.rotation.w = qw
 
-            self.tf_broadcaster.sendTransform(tf_msg)
+            # self.tf_broadcaster.sendTransform(tf_msg)
 
         if self.print_debug:
             self.get_logger().info(
