@@ -1,0 +1,12 @@
+track_odometry_node:
+  ros__parameters:
+    feedback_topic: "/vesc/track_speed_feedback"
+    odom_topic: "/odom"
+
+    odom_frame: "odom"
+    base_frame: "base_link"
+
+    track_width: 0.50
+
+    publish_tf: true
+    print_debug: false

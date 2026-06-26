@@ -39,6 +39,8 @@ setup(
     entry_points={
         'console_scripts': [
             'vesc_tracks_node = ros2_vesc_control.vesc_tracks_node:main',
+            'track_odometry_node = ros2_vesc_control.track_odometry_node:main',
         ],
+
     },
 )
