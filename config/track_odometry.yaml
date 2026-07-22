@@ -8,5 +8,5 @@ track_odometry_node:
 
     track_width: 0.58
 
-    publish_tf: true
+    publish_tf: false
     print_debug: false
