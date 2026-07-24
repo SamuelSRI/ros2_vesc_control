@@ -1,11 +1,11 @@
 vesc_tracks_node:
   ros__parameters:
 
-    left_port: "/dev/ttyACM0"
-    right_port: "/dev/ttyACM1"
+    left_port: "/dev/serial/by-path/platform-3610000.usb-usb-0:2.2:1.0"
+    right_port: "/dev/serial/by-path/platform-3610000.usb-usb-0:2.1:1.0"
     baudrate: 115200
 
-    wheel_diameter: 0.165
+    wheel_diameter: 0.23
     gear_ratio: 20.0
     motor_poles: 14.0
     max_erpm: 35000
